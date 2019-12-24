@@ -1,0 +1,12 @@
+README
+
+My overall design includes an App class that starts the program,
+a PaneOrganizer class that sets up the graphical component of the program, and 
+a Game class that handles all logical components, user input, and the game 
+animation. The Game class uses a series of buttons to go from different screens
+for different functionalities of the program. With these various options, one 
+can run simulated offensive games for teams specified by inputted players, 
+play a game and use the Up and Left arrow keys to steal second or third, the
+P key to pause, and the B key to bunt, generate an optimized lineup based on 
+simulated games with all possible permutations of a lineup, and evaluate bunting
+and stolen base decisions. 
