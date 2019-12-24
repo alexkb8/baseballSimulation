@@ -1,0 +1,41 @@
+package Indy;
+
+/**
+ * Constants class that holds relevant information and default players. These
+ * default players are based on 2019 MLB averages
+ */
+
+public class Constants {
+
+	// This simulation gets 3.85 runs per game for mlb avg, 3.9 w/ 9 mlb avg players, 
+	//real avg is 4.83(game maybe 8.5ish bc bottom of 9th not always played)
+	// innings offensively)
+	// simulation says MLB pitchers should NOT bunt, but real analysis would include
+	// innings, score difference...
+	// https://www.baseball-reference.com/leagues/split.cgi?t=b&lg=MLB&year=2019
+	// obp, hr, double, triple, walks, plate appearances, stealing 2nd, 3rd, and player #
+
+	public static final double[] CATCHER = { .309, 0.03583, 0.04105, 0.001652, 0.0833, 1, .4, .5, 2 };
+	public static final double[] FIRST = { .338, 0.04336418, 0.0462742, 0.0025760, 0.101087, 1, .5, .5, 3 };
+	public static final double[] SECOND = { .32, 0.0300345, 0.04463807, 0.005305, 0.0769118, 1, .72, .7, 4 };
+	public static final double[] THIRD = { .335, 0.04088, 0.048, 0.00397, 0.08918, 1, .6, .5, 6 };
+	public static final double[] SS = { .326, 0.0328, 0.052, 0.0057, 0.0734, 1, .75, .7, 5 };
+	public static final double[] LF = { .332, 0.03806, 0.0497, 0.00569, 0.08618, 1, .66, .6, 7 };
+	public static final double[] CF = { .319, 0.0335, 0.047, 0.00595, 0.08015, 1, .85, .8, 8 };
+	public static final double[] RF = { .338, 0.0405, 0.047, 0.00424, 0.0920, 1, .8, .78, 9 };
+	public static final double[] PITCHER = { .159, 0.0049, 0.0145, 0.000785, 0.0306, 1, .3, .3, 1 };
+
+	public static final double[] FREQ = { .321, 187, 275, 29, 1409, 6500, 0, 0 };
+	public static final double[] FREQSS = { .321, .05, .02, .01, .05, 6500, .7, .6 };
+	public static final int[] ZEROS = { 0, 0, 0, 0, 0, 0, 0, 0 };
+	public static final double[] PLAYER1 = { .5, .04, .01, .01, .1, 1000, .7, .6, 1 };
+
+	public static final double[] WALKS40 = { .4, 0, 0, 0, .4, 1, .5, .5, 40 };
+	public static final double[] HOMERUNS10 = { .1, .1, 0, 0, 0, 1, .5, .5, 10 };
+	public static final double[] MLBAVG = { .323, 0.03632, 0.0457384, 0.004208, 0.0709, 1, 0.7331, 0.78763, 0 };
+	public static final double SIZE = 60;
+	public static final double LENGTH = 100;
+	public static final double DOUBLEPLAY = 0.0493; // probability found by running w/ mlb avg and counting total
+	public static final double SACRIFICE = 0.166; //also found by running game and comparing totals
+	public static final double BUNT = 0.75;
+}
